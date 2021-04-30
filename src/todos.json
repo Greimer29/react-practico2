@@ -1,0 +1,23 @@
+{
+    "todos": [{
+        "titulo": "Task1",
+        "responsable": "Abel",
+        "descripcion": "Lorem Prium",
+        "prioridad": "low"
+    }, {
+        "titulo": "Task2",
+        "responsable": "Ahsley",
+        "descripcion": "Lorem Prium",
+        "prioridad": "medium"
+    }, {
+        "titulo": "Task3",
+        "responsable": "Eli",
+        "descripcion": "Lorem Prium",
+        "prioridad": "high"
+    }, {
+        "titulo": "Task4",
+        "responsable": "Yorgelis",
+        "descripcion": "Lorem Prium",
+        "prioridad": "very high"
+    }]
+}
