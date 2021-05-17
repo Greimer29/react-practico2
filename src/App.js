@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import TodoForm from './components/Todo.form';
 import {todos} from './todos.json';
@@ -33,24 +33,33 @@ class App extends Component {
         </div>
       );
     })
-    return(
+    return (
       <div className="App">
         <nav className="navbar navbar-dark bg-dark">
-          <a href="/"className="text-white">
-              {this.state.titulo}
-              <span className="badge badge-light">
-                {this.state.todos.length}
-              </span>
+          <a href="/" className="text-white">
+            {this.state.titulo}
+            <span className="badge badge-pill badge-light">
+              {this.state.todos.length}
+            </span>
           </a>
         </nav>
-            <TodoForm/>
+
         <div className="container">
           <div className="row mt-4">
-            {todos}
+            <div className="col-md-3">
+              <img src={logo} alt="elLogo"/>
+              <TodoForm />
+            </div>
+            <div className="col-md-9">
+              <div className="row">
+                {todos}
+              </div>
+            </div>
           </div>
         </div>
+        
       </div>
-    )
+    );
   }
 }
 
