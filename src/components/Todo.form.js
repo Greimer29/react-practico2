@@ -10,7 +10,7 @@ class TodoForm extends Component {
       prioridad: "low",
     };
     this.handleInput = this.handleInput.bind(this);
-    // this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleInput(e) {
     const { name, value } = e.target;
@@ -20,10 +20,10 @@ class TodoForm extends Component {
     console.log(e.target.name, e.target.value);
   }
 
-  // handleSubmit(e){
-  //     e.preventDefault();
+  handleSubmit(e){
+      e.preventDefault();
 
-  // }
+  }
   render() {
     return (
       <div className="card">
