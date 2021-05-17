@@ -19,7 +19,9 @@ class App extends Component {
           <div className="card mt-4">
             <div className="card-header">
               <h3>{todo.titulo}</h3>
-              <span>{todo.prioridad}</span>
+              <span className="badge badge-pill bg-danger ml-2">
+                {todo.prioridad}
+              </span>
             </div>
             <div className="card-body">
               <p> {todo.descripcion} </p>
