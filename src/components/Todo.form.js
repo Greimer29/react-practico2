@@ -22,7 +22,8 @@ class TodoForm extends Component {
 
   handleSubmit(e){
       e.preventDefault();
-
+      this.props.onAddTodo(this.state);
+      console.log(this.state);
   }
   render() {
     return (
@@ -49,7 +50,7 @@ class TodoForm extends Component {
           <div className="form-group">
             <input
               type="text"
-              name="descripción"
+              name="descripcion"
               className="form-control"
               placeholder="Descripción"
               onChange={this.handleInput}
