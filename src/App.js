@@ -14,22 +14,22 @@ class App extends Component {
   }
   render(){
     const todos = this.state.todos.map((todo,i)=>{
-      return(
-        <div className="col-md-4">
+      return (
+        <div className="col-md-4" key={i}>
           <div className="card mt-4">
             <div className="card-header">
               <h3>{todo.titulo}</h3>
-              <span> 
-                {todo.prioridad}
-              </span>
+              <span>{todo.prioridad}</span>
             </div>
             <div className="card-body">
               <p> {todo.descripcion} </p>
-              <p><mark>{todo.responsable}</mark></p>
+              <p>
+                <mark>{todo.responsable}</mark>
+              </p>
             </div>
           </div>
         </div>
-      )
+      );
     })
     return(
       <div className="App">
