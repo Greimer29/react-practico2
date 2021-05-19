@@ -9,9 +9,16 @@ class TodoForm extends Component{
             descripcion:'',
             prioridad:'low'
         };
+        this.handleInput = this.handleInput.bind(this);
     }
     handleInput(e){
-        console.log(e.target.name)
+        const {value,name} = e.target;
+
+        this.setState({
+            [name]:value
+        });
+
+        console.log(e.target.value);
     }
     render(){
         return(
