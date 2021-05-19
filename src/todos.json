@@ -14,10 +14,5 @@
         "responsable": "Eli",
         "descripcion": "Lorem Prium",
         "prioridad": "high"
-    }, {
-        "titulo": "Task4",
-        "responsable": "Yorgelis",
-        "descripcion": "Lorem Prium",
-        "prioridad": "very high"
     }]
 }
